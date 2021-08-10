@@ -6,14 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Countries || Bootstrap</title>
   <!-- <link rel="stylesheet" href="css/normalize.css"> -->
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <!-- <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
   <header class="site-header">
     <div class="site-header__container container">
-      <a class="main-logo" href="index.html">
+      <a class="main-logo d-block" href="index.html">
         <img src="img/main-logo.svg" alt="main logo" width="234" height="33">
       </a>
       
@@ -23,11 +24,11 @@
 
   <main>
     <div class="container container-fluid">
-      <h1 class="visually-hidden">Countries list</h1>
-      <form class="search-form flex-column flex-sm-row align-items-sm-start" action="https://echo.htmlacademy.ru" method="POST">
+      <h1 class="sr-only">Countries list</h1>
+      <form class="search-form flex-column flex-sm-row align-items-sm-start" action="https://echo.htmlacademy.ru" method="GET">
         <div class="search-form__search">
           <button class="search-form__btn" type="submit"></button>
-          <input class="search-form__inp-search" type="search" name="search" placeholder="Search for a country…">
+          <input class="search-form__inp-search" type="search" name="search" placeholder="Search for a country…" aria-label="search for a country">
         </div>
       
         <div class="search-form__select-wrapper">
@@ -42,10 +43,12 @@
         </div>
       </form>
 
-      <ul class="countries row list-unstyled p-0 m-0">
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0 m-0 mb-5 d-flex flex-column align-items-center" >
+      <ul class="countries row list-unstyled">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 m-0 mb-5 d-flex flex-column align-items-center" >
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/Germany.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href="#">
+              <img class="countries__img d-block mb-4" src="img/Germany.png" alt="germany's flag" width="264" height="160">
+            </a>
             <div class="countries__content d-block p-3">
               <h2 class="countries__title h5 mb-3 d-inline-block">Germany</h2>
               <dl class="countries__info d-flex flex-column">
@@ -66,9 +69,11 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0 mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href="#">
+              <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            </a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -90,9 +95,9 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href=""><img class="countries__img d-block mb-4" src="img/brasil.png" alt="germany's flag" width="264" height="160"></a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -114,9 +119,9 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href=""><img class="countries__img d-block mb-4" src="img/iceland.png" alt="germany's flag" width="264" height="160"></a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -138,9 +143,11 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href="">
+              <img class="countries__img d-block mb-4" src="img/afghanistan.png" alt="germany's flag" width="264" height="160">
+            </a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -162,9 +169,11 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href="">
+              <img class="countries__img d-block mb-4" src="img/islands.png" alt="germany's flag" width="264" height="160">
+            </a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -186,9 +195,11 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href="">
+              <img class="countries__img d-block mb-4" src="img/albania.png" alt="germany's flag" width="264" height="160">
+            </a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -210,9 +221,11 @@
           </div>
         </li>
 
-        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 mb-5 d-flex flex-column align-items-center">
           <div class="countries__item">
-            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            <a class="stretched-link" href="">
+              <img class="countries__img d-block mb-4" src="img/algeria.png" alt="germany's flag" width="264" height="160">
+            </a>
             
             <div class="countries__content p-3">
               <h2 class="countries__title h5 mb-3">Germany</h2>
@@ -240,7 +253,7 @@
   
   <script src="node_modules/jquery/dist/jquery.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <!-- <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script> -->
   <!-- <script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script> -->
 </body>
 </html>
