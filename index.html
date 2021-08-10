@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Countries || Bootstrap</title>
+  <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="site-header__container container">
+      <a class="main-logo" href="index.html">
+        <img src="img/main-logo.svg" alt="main logo" width="234" height="33">
+      </a>
+      
+      <button class="site-header__btn-toggler">Dark Mode</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container container-fluid">
+      <h1 class="visually-hidden">Countries list</h1>
+      <form class="search-form flex-column flex-sm-row align-items-sm-start" action="https://echo.htmlacademy.ru" method="POST">
+        <div class="search-form__search">
+          <button class="search-form__btn" type="submit"></button>
+          <input class="search-form__inp-search" type="search" name="search" placeholder="Search for a country…">
+        </div>
+      
+        <div class="search-form__select-wrapper">
+          <select class="search-form__select" name="filter-region">
+            <option class="option" value="" disabled selected>Filter by Region</option>
+            <option class="option" value="africa">Africa</option>
+            <option class="option" value="america">America</option>
+            <option class="option" value="asia">Asia</option>
+            <option class="option" value="europe">Europe</option>
+            <option class="option" value="oceania">Oceania</option>
+          </select>
+        </div>
+      </form>
+
+      <ul class="countries row list-unstyled p-0 m-0">
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0 m-0 mb-5 d-flex flex-column align-items-center" >
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/Germany.png" alt="germany's flag" width="264" height="160">
+            <div class="countries__content d-block p-3">
+              <h2 class="countries__title h5 mb-3 d-inline-block">Germany</h2>
+              <dl class="countries__info d-flex flex-column">
+                <div class="d-inline-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value">81,770,900</dd>
+                </div>
+                <div class="d-inline-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-inline-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0 mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+
+        <li class="col-12 col-sm-6 col-md-4 col-xl-3 p-0  mb-5 d-flex flex-column align-items-center">
+          <div class="countries__item">
+            <img class="countries__img d-block mb-4" src="img/usa.png" alt="germany's flag" width="264" height="160">
+            
+            <div class="countries__content p-3">
+              <h2 class="countries__title h5 mb-3">Germany</h2>
+              <dl class="countries__info ">
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Population:</dt>
+                  <dd class="countries__value"> 81,770,900</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Region:</dt>
+                  <dd class="countries__value">Europe</dd>
+                </div>
+                <div class="d-flex mb-1">
+                  <dt class="countries__def mr-1">Capital:</dt>
+                  <dd class="countries__value">Berlin</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </main>
+  
+  <script src="node_modules/jquery/dist/jquery.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  <script src="node_modules/@popperjs/core/dist/cjs/popper.js"></script>
+</body>
+</html>

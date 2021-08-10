@@ -1,0 +1,229 @@
+:root{
+  --main-font: "Nunito Sans", sans-serif;
+}
+
+@font-face{
+  font-family: "Nunito Sans";
+  src: 
+    url("../fonts/NunitoSans-Light.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Light.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+  font-family: "Nunito Sans";
+  src: 
+    url("../fonts/NunitoSans-Regular.woff2") format("woff2"),
+    url("../fonts/NunitoSans-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+  font-family: "Nunito Sans";
+  src: 
+    url("../fonts/NunitoSans-SemiBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-SemiBold.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face{
+  font-family: "Nunito Sans";
+  src: 
+    url("../fonts/NunitoSans-ExtraBold.woff2") format("woff2"),
+    url("../fonts/NunitoSans-ExtraBold.woff") format("woff");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+html{
+  box-sizing: border-box;
+}
+
+*,*::after,*::before{
+  box-sizing: inherit;
+}
+
+body{
+  height: 100%;
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  background: #FAFAFA;
+  color: #111517;
+}
+
+img{
+  width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container{
+  width: 100%;
+  max-width: 1320px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.main-logo{
+  display: block;
+  width: 234px;
+  height: 33px;
+  opacity: 1;
+}
+
+.main-logo:hover{
+  opacity: 0.8;
+}
+
+.main-logo:active{
+  opacity: 0.6;
+}
+
+.site-header{
+  padding-top: 23px;
+  padding-bottom: 23px;
+  background-color: #fff;
+}
+
+.site-header__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.site-header__btn-toggler{
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  color: #111517;
+  border: none;
+  background-color: transparent;
+  display: inline-flex;
+}
+
+.site-header__btn-toggler::before{
+  content: "";
+  margin-right: 8px;
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("/img/icon-moon.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.search-form {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search-form__search {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  max-width: 480px;
+  /* padding-right: 271px; */
+  padding-left: 32px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.search-form__btn {
+  width: 18;
+  height: 18px;
+  margin-right: 24px;
+  background-image: url("/img/icon-magnifier.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  border: none;
+  background-color: transparent;
+}
+
+.search-form__inp-search {
+  border: none;
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 20px;
+  color: #848484;
+}
+
+.search-form__select-wrapper{
+  background: #FFFFFF;
+  box-shadow: 0px 2px 9px rgba(0, 0, 0, 0.0532439);
+  border-radius: 5px;
+  padding-right: 22px;
+  padding-left: 22px;
+}
+
+.search-form__select {
+  padding: 18px;
+  padding-right: 47px;
+  font-family: var(--main-font);
+  color: #111517;
+  font-size: 14px;
+  line-height: 20px;
+  border: none;
+  outline: none;
+}
+
+.option{
+  font-family: var(--main-font);
+  color: #111517;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;
+}
+
+/* COUNTRIES */
+.countries__item{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.0294384);
+  border-radius: 5px;
+}
+
+.countries__img{
+  width: 264px;
+  height: 160px;
+  border-radius: 7px 7px 0 0;
+}
+
+.countries__title{
+  font-family: var(--main-font);
+  color: #111517;
+  font-weight: bold;
+}
+
+
+
+
